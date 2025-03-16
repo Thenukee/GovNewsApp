@@ -380,7 +380,7 @@
                             </div>
                         </div>
                         
-                        <button type="submit" class="btn" onclick="window.location.href='home.html';">Sign In</button>
+                        <button type="button" class="btn" id="signInBtn">Sign In</button>
                         
                         <div class="alternate-action">
                             New user? <a href="registration.html">Create an account</a>
@@ -393,5 +393,10 @@
             </div>
         </div>
     </div>
+    <script>
+  document.getElementById('signInBtn').addEventListener('click', function() {
+    window.location.href = 'home.html';
+  });
+</script>
 </body>
 </html>
